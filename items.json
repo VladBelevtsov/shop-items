@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "LeBron 17 Graffiti",
+    "price": 225,
+    "value": 5,
+    "img": "./img/001.jpg",
+    "desc": "Basketball Shoe"
+  },
+  {
+    "id": 2,
+    "title": "KD13",
+    "price": 150,
+    "value": 5,
+    "img": "./img/002.jpg",
+    "desc": "Basketball Shoe"
+  },
+  {
+    "id": 3,
+    "title": "Nike React Sertu",
+    "price": 150,
+    "value": 5,
+    "img": "./img/003.jpg",
+    "desc": "Mens Shoe"
+  },
+  {
+    "id": 4,
+    "title": "Nike Air Max 95 Essential",
+    "price": 170,
+    "value": 5,
+    "img": "./img/004.jpg",
+    "desc": "Mens Shoe"
+  },
+  {
+    "id": 5,
+    "title": "Nike Joyride Run Flyknit",
+    "price": 180,
+    "value": 5,
+    "img": "./img/005.jpg",
+    "desc": "Mens Running Shoe"
+  },
+  {
+    "id": 6,
+    "title": "Nike CruzrOne",
+    "price": 150,
+    "value": 5,
+    "img": "./img/006.jpg",
+    "desc": "Unisex Shoe"
+  }
+]

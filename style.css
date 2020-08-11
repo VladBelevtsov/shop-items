@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #edeef2;
+}
+
+.container {
+  max-width: 1254px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.itemWrapp {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.card {
+  margin-top: 5rem;
+  width: 31%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,.05);
+  border-radius: 6px;
+  overflow:hidden;
+}
+
+.card:hover img {
+  transform: translateY(-10px);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: .2s ease;
+}
+
+.card .text {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.card .title {
+  color: #000;
+}
+
+.card .title span {
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.card .title p {
+  color: #888;
+  font-size: 16px;
+}
+
+.card .price {
+  color: #000
+}
+
+.card .nAvailable {
+  padding-top: 0.5rem;
+  color: rgb(226, 35, 35);
+}
+
+.author {
+  padding-bottom: 5rem;
+}
+
+.author a {
+  color: #000;
+}
+
+@media screen and (max-width: 900px) {
+  .card {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 100%;
+  }
+}
