@@ -32,9 +32,24 @@ body {
   cursor: pointer;
 }
 
+.sort-optoins button img {
+  width: 16px;
+}
+
+.sort-optoins div:nth-child(2) {
+  display: flex;
+}
+
+.btn-block, .btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sort-optoins button:hover {
   background: #f59575;
 }
+
 
 /* BLOCK */
 
