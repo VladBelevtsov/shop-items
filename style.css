@@ -181,6 +181,11 @@ body {
   padding-right: 30px;
 }
 
+.list .card .nAvailable {
+  padding-top: 0.5rem;
+  color: rgb(226, 35, 35);
+}
+
 .author {
   padding-bottom: 5rem;
 }
