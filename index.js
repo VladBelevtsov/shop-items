@@ -4,7 +4,26 @@ const url = './items.json'
 const sort_low_btn = document.querySelector('.sort-low-high')
 const sort_high_btn = document.querySelector('.sort-high-low')
 
+const blockBtn = document.querySelector('.btn-block')
+const listBtn = document.querySelector('.btn-list')
 
+const theme = localStorage.getItem('theme')
+const isSolar = localStorage.getItem('isSolar')
+
+if (theme) {
+  itemWrapp.classList.add(theme)
+  isSolar && itemWrapp.classList('block')
+}
+
+blockBtn.onclick = () => {
+  itemWrapp.classList.replace('list', 'block')
+  localStorage.setItem('theme', 'block')
+}
+
+listBtn.onclick = () => {
+  itemWrapp.classList.replace('block', 'list')
+  localStorage.setItem('theme', 'list')
+}
 
 fetch(url)
   .then(function(resp) { return resp.json() })

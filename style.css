@@ -17,6 +17,9 @@ body {
 
 .sort-optoins {
   padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .sort-optoins button {
@@ -33,7 +36,9 @@ body {
   background: #f59575;
 }
 
-.itemWrapp {
+/* BLOCK */
+
+.block {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -42,7 +47,7 @@ body {
   padding-bottom: 5rem;
 }
 
-.card {
+.block .card {
   margin-top: 5rem;
   width: 31%;
   background-color: #f5f5f5;
@@ -51,21 +56,21 @@ body {
   overflow:hidden;
 }
 
-.card:hover img {
+.block .card:hover img {
   transform: translateY(-10px);
 }
 
-.card a {
+.block .card a {
   text-decoration: none;
 }
 
-.card img {
+.block .card img {
   width: 100%;
   display: block;
   transition: .2s ease;
 }
 
-.card .text {
+.block .card .text {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -73,28 +78,92 @@ body {
   padding: 20px 30px;
 }
 
-.card .title {
+.block .card .title {
   color: #000;
 }
 
-.card .title span {
+.block .card .title span {
   font-size: 20px;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
 
-.card .title p {
+.block .card .title p {
   color: #888;
   font-size: 16px;
 }
 
-.card .price {
+.block .card .price {
   color: #000
 }
 
-.card .nAvailable {
+.block .card .nAvailable {
   padding-top: 0.5rem;
   color: rgb(226, 35, 35);
+}
+
+/* BLOCK */
+
+/* LIST */
+
+.list {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.list .card{
+  width: 100%;
+
+  padding: 10px;
+  border-radius: 6px;
+
+  margin-top: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,.05);
+
+  overflow:hidden;
+}
+
+.list a {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.list .card img {
+  width: 180px;
+  display: block;
+  transition: .2s ease;
+}
+
+.list .card .text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list .card .title {
+  padding-left: 30px;
+  color: #000;
+}
+
+.list .card .title span {
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.list .card .title p {
+  color: #888;
+  font-size: 16px;
+}
+
+.list .card .price {
+  color: #000;
+  padding-right: 30px;
 }
 
 .author {
@@ -106,13 +175,13 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .card {
+  .block .card {
     width: 49%;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .card {
+  .block .card {
     width: 100%;
   }
 }
