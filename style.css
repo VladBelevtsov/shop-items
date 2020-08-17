@@ -15,6 +15,24 @@ body {
   margin: 0 auto;
 }
 
+.sort-optoins {
+  padding-top: 5rem;
+}
+
+.sort-optoins button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,.2);
+  margin-right: 1rem;
+  outline: none;
+  transition: .2s ease;
+  cursor: pointer;
+}
+
+.sort-optoins button:hover {
+  background: #f59575;
+}
+
 .itemWrapp {
   display: -webkit-flex;
   display: -ms-flex;
